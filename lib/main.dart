@@ -42,10 +42,10 @@ class HomePage extends StatelessWidget{
 
                   ElevatedButton(
                       onPressed: (){
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context)=> NextPage(input:nameInput.text))
-                      );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context)=> NextPage(input:nameInput.text))
+                        );
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.pinkAccent,
@@ -74,7 +74,7 @@ class NextPage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
         appBar: AppBar(
-            title: const Text("Login"),
+            title: const Text("New Page"),
             backgroundColor: Colors.pinkAccent,
             leading: const Icon(Icons.assignment_ind),
             centerTitle: true
@@ -87,7 +87,7 @@ class NextPage extends StatelessWidget{
                   Text("Hello $input, welcome to our application",
                   textAlign: TextAlign.center),
                   const SizedBox(height: 20),
-                  OutlinedButton(onPressed: (){
+                  OutlinedButton(onPressed:(){
                     Navigator.pop(context);
                   },
                       style: OutlinedButton.styleFrom(
