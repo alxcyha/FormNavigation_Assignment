@@ -45,7 +45,7 @@ class HomePage extends StatelessWidget{
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context)=> NextPage(input:nameInput.text))
-                        );
+                        ); //to navigate to next page
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.pinkAccent,
